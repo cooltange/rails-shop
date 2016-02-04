@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
+  get 'home/welcome'
+
+  get 'home/about'
+
+  get 'home/contact'
+
+  resources :variants
+
   resources :products
 
   # The priority is based upon order of creation: first created -> highest priority.
